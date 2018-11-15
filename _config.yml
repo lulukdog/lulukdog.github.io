@@ -17,7 +17,7 @@ sidebar-avatar: /img/about-zoro-gentle.jpg      # use absolute URL, seeing it's 
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
@@ -32,3 +32,10 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM  
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
